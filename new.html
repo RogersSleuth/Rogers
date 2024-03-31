@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New website with Image transform Effect</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #edf2fc;
+            font-family: sans-serif;
+            height: 100vh;
+            width: 100%;
+            border: 5px solid black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 120px;
+            width: auto;
+            /* border: 3px solid navy; */
+            /* background-color: #edf2fc; */
+
+        }
+        .logo {
+            margin-left: 10px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .nav ul li {
+            margin-right: 40px;
+            display: inline-block;
+
+        }
+        ul li a {
+            cursor: pointer;
+            text-decoration-line: none
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: #606163;
+        }
+    .nav ul li a:hover{
+        color: #ff4321;
+    }
+    .info {
+        margin-top: 15%;
+        margin-left: 8%;
+    }
+    .info h1 {
+        margin-bottom: 5%;
+        color: #212121;
+        font-size: 70px;
+
+    }
+    h1 span {
+        color: #ff4321;
+    }
+   .info p {
+    color: #606163;
+    line-height: 22px;
+   }
+    button {
+        cursor: pointer;
+        color: white;
+        background-color: black;
+        /* font-size: 16px; */
+        border-radius: 8px;
+        height: 30px;
+        width: 120px;
+    }
+    .img-box {
+        width: 45%;
+        height: 80%;
+        bottom: 0;
+        right: 100px;
+        position: absolute;
+    }
+    .img-box img {
+        height: 100%;
+        bottom: 0;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%);
+
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <img src="logo.png" alt="" class="logo">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Hire Me</a></li>
+        </ul>
+    </div>
+    <div class="info">
+        <h1>I'm <span>Kate</span> Amelia </h1>
+        <p>This is my official Portfolio website to showcase my all work.<br> Related to web development and UI designs.</p>
+        <button>Download CV</button>
+    </div>
+</body>
+<div class="img-box">
+    <img src="pattern.png" alt="">
+    <img src="girl.png" alt="">
+</div>
+
+</html>
